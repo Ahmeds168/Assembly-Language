@@ -1,0 +1,38 @@
+; You may customize this and other start-up templates;
+; The location of this template is c:\emu8086\inc\0_com_template.txt
+
+
+; add your code here
+.model small
+.stack 100h
+
+.code
+main proc
+
+
+
+
+mov ah,02
+mov dl,'A'
+int 21h
+
+mov ah,4ch
+int 21h
+
+
+
+
+
+main endp
+
+end main
+
+
+
+
+
+
+
+
+
+; [SOURCE]: C:\Users\DELL\Desktop\CA & AL\LAB 3\getting input.asm
